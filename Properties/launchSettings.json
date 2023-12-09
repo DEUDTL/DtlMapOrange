@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DtlMapOrange": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Pilot_model_Gear.pkcls\"\r\n\"Pilot_Test set_Gear.tab\"\r\n\"Gear\""
+    }
+  }
+}
