@@ -2,7 +2,7 @@
   "profiles": {
     "DtlMapOrange": {
       "commandName": "Project",
-      "commandLineArgs": "\"Pilot_model_Gear.pkcls\"\r\n\"Pilot_Test set_Gear.tab\"\r\n\"Gear\""
+      "commandLineArgs": "\"G:\\workdeu\\WattModel\\2024-02-15\\5_Unbalance.pkcls\"\r\n\"G:\\workdeu\\WattModel\\2024-02-15\\5_Unbalance_Testset.tab\"\r\n\"Unbalance\""
     }
   }
 }

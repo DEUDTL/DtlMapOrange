@@ -106,7 +106,7 @@ public class OrangeAccess
 		for (var i = 1; i < tab.Length; i++)
 		{
 			var ss = tab[i].Split('\t');
-			if (ss.Length<index)
+			if (ss.Length < index)
 				continue;
 			res.Add(Convert.ToDouble(ss[index].Trim()));
 		}
@@ -124,5 +124,24 @@ public class OrangeAccess
 		}
 
 		return -1;
+	}
+
+	public static bool WriteCsv(string filename, List<double> lstTab, List<double> lstPrd)
+	{
+		try
+		{
+			StreamWriter sw = new StreamWriter(filename);
+			sw.WriteLine("Tab,Predicted");
+			for (var i = 0; i < lstTab.Count; i++)
+			{
+				sw.WriteLine($"{lstTab[i]},{lstPrd[i]}");
+			}
+			sw.Close();
+		}
+		catch (Exception)
+		{
+			return false;
+		}
+		return true;
 	}
 }
