@@ -2,7 +2,8 @@
   "profiles": {
     "DtlMapOrange": {
       "commandName": "Project",
-      "commandLineArgs": "\"G:\\workdeu\\WattModel\\2024-02-15\\5_Unbalance.pkcls\"\r\n\"G:\\workdeu\\WattModel\\2024-02-15\\5_Unbalance_Testset.tab\"\r\n\"Unbalance\""
+      "commandLineArgs": "5_Unbalance.pkcls\r\n5_Unbalance_Testset.tab\r\nUnbalance",
+      "workingDirectory": "G:\\workdeu\\WattModel\\2024-02-15"
     }
   }
 }
