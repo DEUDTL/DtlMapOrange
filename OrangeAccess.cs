@@ -85,9 +85,12 @@ internal class OrangeAccess
 		if (!RunOrange(pickleInfo.FullName, tabInfo.FullName, outFile))
 			return "Python 또는 Orange3를 실행할 수 없어요!";
 
-		var csv = File.ReadAllText(outFile);
-		if (string.IsNullOrEmpty(csv))
+		var newOutFile = outFile.Replace('\\', '/');
+		if (!File.Exists(newOutFile))
 			return "CSV 결과가 만들어지지 않았어요!";
+		var csv = File.ReadAllText(newOutFile);
+		if (string.IsNullOrEmpty(csv))
+			return "CSV 결과 파일은 있는데 내용이 없어요!";
 		if (!ParseResultCsv(csv))
 			return "CSV 결과를 분석할 수 없어요!";
 
